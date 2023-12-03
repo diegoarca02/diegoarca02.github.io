@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+ 
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #f5f8fa !important;">
+
+    <main class="page-wrapper" data-spy="scroll" data-target="#navbar" data-offset="50">
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      
+      <div class="fixed-top">
+        <nav class="py-3" style="background-color: #2bc48a;">
+          <div class="container d-flex flex-wrap">
+            <div class="d-flex align-items-center justify-content-center w-100" id="topBarPromo" style="text-align: center !important;">
+              <span class="text-dark fw-900 text-uppercase" style="font-size: 1rem;font-family: Montserrat !important;font-weight: 600 !important; ">
+                🎉
+                Llenate con habilidades. Cursos de 
+                <b>programación</b> a 
+                <b>
+                  9.90 USD 
+                </b>
+                y Plantillas 
+                <b>¡GRATIS!</b>
+                🎉
+              </span>
+            </div>
+            
+          </div>
+        </nav>
+        <header class="header navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-example">
+          
+          <div class="container px-3">
+            <a href="index.html" class="navbar-brand pe-3">
+              <img src="assets/media/logo.png" width="47" alt="Silicon">
+            </a>
+            <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+              <div class="offcanvas-header border-bottom border-light">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link text-uppercase nav-item-style">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#courses" class="nav-link text-uppercase nav-item-style">Cursos</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="offcanvas-header border-top border-light">
+                <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                  <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+                  &nbsp;Buy now
+                </a>
+              </div>      
+            </div>
+            <div class="pe-lg-1" data-bs-theme="dark">
+              <img src="assets/media/udemy.png" style="width: 100px;" alt="">
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+          </div>
+        </header>
+      </div>
+
+
+      <div  data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <section id="home" class="position-relative bg-dark pt-lg-4 pt-xl-5" style="background: linear-gradient(90deg, #0B0F19 0%, #172033 51.04%, #0B0F19 100%);">
+
+          <div class="jarallax position-absolute top-0 start-0 w-100 h-100" data-jarallax data-speed="0.4">
+            <div class="jarallax-img" style="background-image: url(assets/media/hero-bg-pattern.png);"></div>
+          </div>
+          <div class="container position-relative zindex-2 pt-2 pt-sm-4 pt-md-5">
+            <div class="row justify-content-center pt-5">
+              <div class="col-lg-7 pt-5 mt-1 text-start content-section-1">
+                <h1 class="text-white pt-4 mt-4 mb-4 ff-motserrat text-uppercase">
+                  <span class="display-5">Domina el arte de la</span>
+                  <br>
+                  <span class="text-primary fw-900 display-3">Programación</span>
+                </h1>
+                <div>
+                  <p class="text-white txt-section-1" style="margin-bottom: 3rem;text-align: justify;font-size: 1rem;">
+                    Explora las fases de análisis, desarrollo y producción de plataformas reales.
+                    <br>
+                    Aprenderás nuevas técnicas en cada etapa y al final de cada curso podrás <br>
+                    crear y modelar tus propios proyectos.
+                  </p>
+                </div>
+                <a [routerLink]="['/https://www.udemy.com/user/diego-alonso-55/']" 
+                  class="d-inline-flex align-items-center fs-sm fw-semibold 
+                  text-decoration-none rounded-pill py-2 px-3 btn-style btn-section-1" style="background: white !important;">
+                  <img src="assets/media/logo2-udemy.png" style="width: 15px;" class="me-2" alt="">
+                  <span class="text-dark lh-lg text-uppercase" style="font-weight: 600;">Todos los cursos</span>
+                  <i class="bx bx-right-arrow-alt text-dark fs-lg ms-2 me-n1"></i>
+                </a>
+              </div>
+              
+              <!-- Columna 2 -->
+              <div class="col-lg-5 pt-5 mt-1 text-start content-section-2  d-none d-md-block">
+                <div class="parallax" style="max-width: 636px;">
+                  <div class="parallax-layer" data-depth="0.05">
+                    <img src="assets/media/circle-1.png" alt="Circle 1">
+                  </div>
+                  <div class="parallax-layer" data-depth="0.1">
+                    <img src="assets/media/circle-2.png" alt="Circle 2">
+                  </div>
+                  <div class="parallax-layer" data-depth="0.15">
+                    <img src="assets/media/circle-3.png" alt="Circle 3">
+                  </div>
+                  <div class="parallax-layer" data-depth="0.2">
+                    <div class="position-absolute top-50 start-50 translate-middle bg-dark rounded-circle p-4">
+                     
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 28.7%; padding-left: 57%;" data-depth="0.3">
+                    <div class="position-relative">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/angular.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 60%; padding-left: 27.6%;" data-depth="0.45">
+                    <div class="position-relative" style="top: 13.3%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/node.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 85.8%;" data-depth="0.3">
+                    <div class="position-relative" style="top: 32.7%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/vue.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-left: 85.8%;" data-depth="0.25">
+                    <div class="position-relative" style="top: 35.5%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/mongo.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 27.8%; padding-left: 62.9%;" data-depth="0.35">
+                    <div class="position-relative" style="top: 30.7%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/ubuntu.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 45%; padding-left: 45%;" data-depth="0.45">
+                    <div class="position-relative" style="top: 73.5%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/express.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 73.3%; padding-left: 11.1%;" data-depth="0.25">
+                    <div class="position-relative" style="top: 78.8%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/jwtr.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 68.2%; padding-left: 21%;" data-depth="0.4">
+                    <div class="position-relative" style="top: 52.9%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/ts.png" alt="">
+                    </div>
+                  </div>
+                  <div class="parallax-layer" style="padding-right: 16%; padding-left: 71.4%;" data-depth="0.3">
+                    <div class="position-relative" style="top: 67.6%;">
+                      <div class="ratio ratio-1x1"></div>
+                      <img src="assets/media/github.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block" style="height: 480px;">
+          </div>
+          <div class="d-lg-none" style="height: 400px;"></div>
+          <div class="d-flex position-absolute bottom-0 start-0 w-100 overflow-hidden mb-n1" style="color: #f5f8fa;">
+            <div class="position-relative start-50 translate-middle-x flex-shrink-0" style="width: 3774px;">
+              <svg width="3774" height="201" viewBox="0 0 3774 201" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 200.003C0 200.003 1137.52 0.188224 1873.5 0.000134392C2614.84 -0.189325 3774 200.003 3774 200.003H0Z" fill="currentColor"/></svg>
+            </div>
+          </div>
+        </section>
+        <!-- Categories (Slider) -->
+        <section class="container position-relative zindex-3">
+          <div class="d-none d-lg-block" style="margin-top: -328px;"></div>
+          <div class=" d-lg-none" style="margin-top: -370px;"></div>
+          <div class="swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                  <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                    <div class="px-md-3">
+                      <h3 class="h6 text-white mb-0 ff-motserrat">E-commerce MEAN</h3>
+                      <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                        <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                          Aprende a como se desarrolla un proyecto desde el analisis 
+                          hasta el despliegue en producción + un segundo ecommerce.
+                        </span>
+                        <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img src="assets/media/4020786_c1d4_2.jpg" alt="Ecommerce">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                  <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                    <div class="px-md-3">
+                      <h3 class="h6 text-white mb-0 ff-motserrat">CRM - ERP</h3>
+                      <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                        <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                          Orientación y nuevos conceptos para crear aplicativos de gestión empresarial.
+                        </span>
+                        <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img src="assets/media/4364638_5a11_5.jpg" alt="Transportation">
+                  </div>
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                  <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                    <div class="px-md-3">
+                      <h3 class="h6 text-white mb-0 ff-motserrat">E-commerce MEVN</h3>
+                      <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                        <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                          Crea una tienda online con su panel administrador usando MEVN y mercado pago como pasarela.
+                      </span>
+                        <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img src="assets/media/4687750_d717_9.jpg" alt="Marketing">
+                  </div>
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                  <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                      <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                      <div class="px-md-3">
+                          <h3 class="h6 text-white mb-0 ff-motserrat">Genera PDF's profesionales.</h3>
+                          <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                          <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                              Crear PDF's con diseños profesionales en tu aplicativo con Javascript.
+                          </span>
+                          <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card-img">
+                      <img src="assets/media/5140088_7af2_2.jpg" alt="Marketing">
+                      </div>
+                  </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                  <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                      <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                      <div class="px-md-3">
+                          <h3 class="h6 text-white mb-0 ff-motserrat">Red social MEAN STACK</h3>
+                          <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                          <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                              Creamos una rea social con perfiles, solicitudes de amistad, notificaciones real time, publicaciones, comentarios, etc.
+                          </span>
+                          <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card-img">
+                      <img src="assets/media/4920430_8d69_2.jpg" alt="Marketing">
+                      </div>
+                  </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                  <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                    <div class="px-3">
+                      <h3 class="h6 text-white mb-0 ff-motserrat">Chat API WhatsApp</h3>
+                      <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                        <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                          Implementa un chat de WhatsApp en cualquier tipo de aplicativo.
+                      </span>
+                        <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img src="assets/media/4854178_c52f.jpg" alt="Robotics">
+                  </div>
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="#" class="card-portfolio position-relative d-block rounded-3 overflow-hidden">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 zindex-1" style="background: linear-gradient(180deg, rgba(17, 24, 39, 0.00) 35.56%, #111827 95.3%);"></span>
+                  <div class="position-absolute bottom-0 w-100 zindex-2 p-4">
+                    <div class="px-3">
+                      <h3 class="h6 text-white mb-0 ff-motserrat">Producción en Linux - Droplets</h3>
+                      <div class="card-portfolio-meta d-flex align-items-center justify-content-between">
+                        <span class="text-white fs-xs text-truncate opacity-70 pe-3">
+                          Guía completa para el despliegue de sitios web seguros y eficientes con VPS y Linux
+                      </span>
+                        <i class="bx bx-right-arrow-circle fs-3 text-gradient-primary"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img src="assets/media/5173352_bc47_4.jpg" alt="Programming">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative bottom-0 pt-2 pt-md-3 mt-4"></div>
+          </div>
+        </section>
+
+        <div class="container" id="courses">
+
+          <div class="position-relative zindex-2 pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-3">
+              <h2 class="h1 text-center pb-1 mb-2 ff-motserrat">
+                  <span class="fw-600">Cursos</span> 
+                  <span class="text-uppercase fw-800 text-primary">Disponibles</span>
+              </h2>
+              <p class="fs-lg text-center pb-lg-2">
+                Descubre mi Mundo de Conocimiento: Explora
+              </p>
+          </div>
+  
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+  
+                  <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                  poster="./assets/media/portada-ecommerce-1.webp" data-setup="{}">
+                    <source src="./assets/media/video-1.mp4" type="video/mp4" />
+                    <source src="./assets/media/video-1.mp4" type="video/webm" />
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a
+                      web browser that
+                      <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                  </video>
+  
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4  fw-800 ff-roboto" style="color: #3f3e3e;">
+                  Crea una tienda online profesional, Ecommerce con <strong>MEAN STACK</strong>
+                  </h3>
+  
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                  Domina el ecommerce con nuestro curso MEAN. Aprende a construir tiendas online eficientes con MongoDB, Express.js, Angular y Node.js. ¡Eleva tus habilidades y haz crecer tu negocio digital!
+                  </p>
+                  
+                  <div class="d-flex list-logos mb-4">
+                  <img src="assets/media/mongo.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/express.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/angular.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/node.png" style="width: 30px;" alt="">
+                  </div>
+  
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+  
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/portada-crm-erp.webp" data-setup="{}">
+                  <source src="./assets/media/video-2.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-2.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Aprende a crear plataforma administrativa CRM y ERP con MEAN
+                  </h3>
+      
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Domina CRM y ERP con nuestro curso MEAN. Desarrolla soluciones empresariales eficientes usando MongoDB, Express.js, Angular y Node.js. Optimiza la gestión de clientes y recursos. ¡Eleva tu expertise con el stack MEAN!
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                  <img src="assets/media/mongo.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/express.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/angular.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/node.png" style="width: 30px;" alt="">
+                  </div>
+      
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/2559668yher.webp" data-setup="{}">
+                  <source src="./assets/media/video-5.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-5.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Aprende a crear una red social con STACK MEAN y Sockets.
+                  </h3>
+          
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Construye tu propia red social desde cero con nuestro curso MEAN Stack. Aprende a utilizar MongoDB, Express.js, Angular y Node.js para desarrollar una plataforma interactiva y escalable. Adquiere las habilidades esenciales para crear experiencias sociales impactantes
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                  <img src="assets/media/mongo.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/express.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/vue.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/node.png" style="width: 30px;" alt="">
+                  </div>
+          
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+  
+  
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/4687750_d717_9.jpg" data-setup="{}">
+                  <source src="./assets/media/video-3.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-3.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Crear tienda online o ecommerce con MEVN y Mercado pago.
+                  </h3>
+          
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Conquista el ecommerce con nuestro curso MEVN. Desarrolla tiendas online con MongoDB, Express.js, Vue.js y Node.js. ¡Potencia tus habilidades y lleva tus proyectos al siguiente nivel!
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                  <img src="assets/media/mongo.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/express.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/angular.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/node.png" style="width: 30px;" alt="">
+                  </div>
+          
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+  
+        
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/4854178_c52f.jpg" data-setup="{}">
+                  <source src="./assets/media/video-4.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-4.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Aprende a crear un chat con el API de WhatsApp, MEAN STACK
+                  </h3>
+          
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Explora la creación de chats con el API de WhatsApp. Aprende a integrar funciones poderosas para experiencias personalizadas. ¡Desata el potencial de la mensajería con nuestro curso especializado!
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                  <img src="assets/media/mongo.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/express.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/angular.png" style="width: 30px;" class="me-3">
+                  <img src="assets/media/node.png" style="width: 30px;" alt="">
+                  </div>
+          
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+          
+  
+          
+         
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/5140088_7af2_2.jpg" data-setup="{}">
+                  <source src="./assets/media/video-6.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-6.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Aprende a generar PDF's avanzados con Javascript
+                  </h3>
+          
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Desata tu creatividad y domina la generación de PDFs con nuestro curso de JavaScript. Aprende a crear documentos profesionales con diseños impactantes. Adquiere habilidades clave para personalizar y dar formato a tus archivos PDF. ¡Impulsa tus proyectos con la capacidad de generar documentos impresionantes usando JavaScript!
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                      <img src="assets/media/angular.png" style="width: 30px;" class="me-3">
+                  </div>
+          
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+  
+          
+          <!-- Use case -->
+          <div class="row align-items-center justify-content-center py-4 py-md-5 my-2 my-sm-3 my-md-0 my-xl-3">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 order-md-2 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+                <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;" height="360"
+                poster="./assets/media/5173352_bc47_4.jpg" data-setup="{}">
+                  <source src="./assets/media/video-7.mp4" type="video/mp4" />
+                  <source src="./assets/media/video-7.mp4" type="video/webm" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="col-md-5 col-xl-4 offset-xl-1 order-md-1 text-center text-md-start">
+                  <h3 class="h3 mb-lg-4 fw-800 ff-roboto" style="color: #3f3e3e;">
+                      Domina la Administración de Servidores Web con VPS y Linux
+                  </h3>
+          
+                  <p class="" style="text-align: justify;font-size: .9rem !important;" >
+                      Descubre el poder de Droplets con nuestro curso en Linux Ubuntu. Aprende a utilizar DrolpEts para desplegar proyectos de manera eficiente. Explora tres formas prácticas de implementar tus aplicaciones. ¡Domina la gestión de proyectos en la nube y lleva tus desarrollos al siguiente nivel con nuestro curso especializado!
+                  </p>
+                  
+                  <div class="d-flex mb-4 list-logos">
+                      <img src="assets/media/ubuntu.png" style="width: 30px;" class="me-3">
+                  </div>
+          
+                  <a class="btn btn-primary rounded-pill btn-style border-0" style="background-color: #0B0F19 !important;">
+                    <img src="assets/media/logo-udemy.png" style="width: 15px;" class="me-3" alt="">
+                    Aplicar cupón en Udemy
+                  <i class="bx bx-right-arrow-alt fs-lg ms-2 me-n1"></i>
+                  </a>
+              </div>
+          </div>
+  
+         
+        </div>
+      </div>
+
+      <!-- Gallery (carousels) -->
+      <section class="mb-5 pt-md-3 pt-lg-4 pt-xl-5">
+        <h2 class="h1 text-center pb-1 mb-5 ff-motserrat">
+            <span class="text-uppercase fw-800 text-primary">Proyectos</span> 
+            <span class="fw-600">Realizados</span>
+        </h2>
+        <div class="pb-2 pb-sm-3 pb-md-4">
+
+          <!-- LTR -->
+          <div class="swiper swiper-proyectos-1" data-swiper-options='{
+            
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/1.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/2.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/3.png" alt="Gallery image" class="rounded-3">
+              </div>
+            </div>
+          </div>
+
+          <!-- RTL -->
+          <div class="swiper swiper-proyectos-2 mt-md-4 mt-sm-3 mt-2" dir="rtl" data-swiper-options='{
+            
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/4.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/5.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/media/6.png" alt="Gallery image" class="rounded-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer pt-5 pb-4 pb-lg-5 bg-dark">
+      <div class="container text-center pt-lg-3">
+        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-2">
+          <img src="assets/media/logo.png" class="me-2" width="60" alt="Silicon">
+        </div>
+
+        
+        <p class="nav d-block fs-sm text-center pt-3 mb-0">
+          <span class="text-muted" style="font-family: monospace;">© All rights reserved</span>
+        
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+  <a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-dark fs-sm me-2">
+      Subir
+    </span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+  </a>
+
+
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+
+  <!-- Vendor Scripts -->
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+  
+
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script src="assets/js/theme.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+
+</body>
+</html>
