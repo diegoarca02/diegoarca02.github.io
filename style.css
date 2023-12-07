@@ -81,3 +81,10 @@
     }
 }
 
+.navbar-nav .show>.nav-link, .navbar-nav .nav-link.active{
+    color: white !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: white !important;
+}
