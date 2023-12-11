@@ -107,6 +107,63 @@ setTimeout(() => {
             }
         }
     });
+
+    new Swiper('.mySwiperRedSocial', {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    lightGallery(document.getElementById('lightGallerySocial'), {
+        thumbnail: true,
+        plugins: [lgVideo],
+    });
+
+    new Swiper('.mySwiperRedCRM', {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    lightGallery(document.getElementById('lightGalleryCRM'), {
+        thumbnail: true,
+        plugins: [lgVideo],
+    });
+
+    new Swiper('.mySwiperRedTiendaVue', {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    lightGallery(document.getElementById('lightGalleryTiendaVue'), {
+        thumbnail: true,
+        plugins: [lgVideo],
+    });
+    
+    
+    
     
 }, 150);
 
